@@ -1,0 +1,242 @@
+.header{
+  width: 100%;
+  padding: 0 120px;
+  background: #F3F8F0;
+}
+.header_container{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.header_menu{
+  width: 100%;
+  padding: 10px 0;
+
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #C6C6C6;
+}
+.header_logo{
+
+}
+
+.header_contacts-block{
+  display: flex;
+}
+.header_soc_icons-block{
+  align-self: center;
+}
+.header_soc_icons-block .soc_icons-block{
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-right: 1px solid #C6C6C6;
+}
+.soc_icons-block .contacts-block-phone,
+.working_day .contacts-block-phone{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Arial,sans-serif;
+  color: var(--col-phone);
+  cursor: pointer;
+}
+
+.header_phone-block{
+  display: flex;
+
+}
+.header_phone-block-group{
+  align-self: center;
+  padding: 10px 25px;
+}
+.working_day{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.week_day-time{
+  align-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.week_day-time span{
+  font-size: 14px;
+  font-family: Arial,sans-serif;
+  color: #747474;
+}
+
+.btn_bcg{
+  background: var(--btn-bcg);
+  color: #fff;
+}
+
+.order-call{
+  font-family: Arial,sans-serif;
+  text-transform: uppercase;
+  border-radius: 1px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  height: 54px;
+  padding: 19px;
+  align-self: center;
+
+}
+
+/* ==================================== nav */
+.nav{
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  gap: 20px;
+  color: #2B2B2B;
+}
+.nav a{
+  font-family: Arial,sans-serif;
+  color: #2B2B2B;
+}
+
+/* ==================================== media */
+
+@media (max-width: 1445px){
+  .header_menu{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header_contacts-block{
+    justify-content: space-between;
+  }
+
+}
+@media (max-width: 920px){
+  /* .header_menu{
+    justify-content: center;
+    flex-direction: column;
+  } */
+  .header_contacts-block {
+      flex-direction: column;
+  }
+  .header_soc_icons-block{
+    align-self: start;
+  }
+  .header_phone-block {
+      display: flex;
+      justify-content: space-between;
+  }
+}
+@media (max-width: 732px){
+  .header{
+    padding: 0 20px;
+  }
+  .header_container{
+    width: 100%;
+  }
+  /* .header_menu{
+    justify-content: center;
+    flex-direction: column;
+  } */
+  .header_contacts-block {
+    flex-direction: column;
+  }
+  .header_soc_icons-block{
+    align-self: start;
+  }
+  .header_soc_icons-block .soc_icons-block {
+    padding: 10px 25px 10px 0px;
+  }
+  .header_phone-block {
+    flex-direction: column;
+  }
+  .header_phone-block-group {
+    align-self: start;
+    padding: 10px 0px;
+  }
+  .working_day {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .week_day-time {
+      align-self: center;
+  }
+  .order-call {
+    align-self: start;
+  }
+}
+  
+@media (max-width: 640px){
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 380px){
+  .working_day {
+    flex-direction: column;
+  }
+  .week_day-time {
+    align-self: start;
+  }
+}
+@media (max-width: 300px){
+  .header_soc_icons-block .soc_icons-block {
+    flex-direction: column-reverse;
+  }
+  .week_day-time {
+    align-self: start;
+  }
+}
+
+@media (max-width: 250px){
+  .order-call {
+    align-self: stretch;
+    font-size: 14px;
+    text-align: center;
+  }
+  .header_soc_icons-block .soc_icons-block {
+      padding: 0px;
+  }
+  .header_soc_icons-block .soc_icons-block {
+    border-right: none;
+  }
+  .header_soc_icons-block {
+    align-self: stretch;
+  }
+  .header_phone-block-group {
+      align-self: center;
+  }
+  .soc_icons-block .contacts-block-phone,
+  .working_day .contacts-block-phone{
+    font-size: 14px;
+  }
+  .contacts-block-phone{
+    align-self: center;
+  }
+}
+
+@media (max-width: 235px){
+  .header {
+    padding: 0 5px;
+  }
+  .header_logo {
+    padding: 5px;
+  }
+  .order-call {
+    padding: 19px 0;
+  }
+}
+
+@media (max-width: 185px){
+  .week_day-time span {
+    font-size: 12px;
+  }
+  .order-call {
+    font-size: 12px;
+  }
+}

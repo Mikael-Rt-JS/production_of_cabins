@@ -1,0 +1,164 @@
+.categories_sell{
+  width: 100%;
+  height: auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  font-family: Arial,sans-serif;
+  gap: 20px;
+  background: #F3F8F0;
+}
+
+.categories_sell h2{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--col-phone);
+}
+
+.categories_sell-cards{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 40px;
+  font-family: Arial,sans-serif;
+}
+
+.categorie_sell_card{
+  background: #fff;
+  display: grid;
+  gap: 25px;
+}
+.categorie_sell_card .title{
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.categorie_sell_card h3{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+}
+.categorie_sell_card .title button{
+  align-self: start;
+  font-size: 20px;
+  background: #3E3E3E;
+  color: #fff;
+  padding: 6px 10px;
+}
+.categorie_sell_card img{
+  justify-self: center;
+
+}
+
+@media(max-width: 1450px){
+  .categories_sell-cards{
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+  }
+  .categorie_sell_card{
+    justify-self: center;
+  }
+}
+
+@media(max-width: 1130px){
+  .categories_sell-cards{
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+  }
+  
+}
+@media(max-width: 1115px){
+  .categories_sell-cards{
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  }
+
+}
+@media(max-width: 835px){
+  .categories_sell-cards{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .categories_sell h2{
+    text-align: center;
+  }
+}
+@media(max-width: 732px){
+  .categories_sell{
+    width: 100%;
+    padding: 60px 20px;
+  }
+  .categories_sell-cards{
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  }
+
+}
+@media(max-width: 640px){
+  .categories_sell-cards{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+}
+@media(max-width: 340px){
+  .categories_sell h2 {
+      font-size: 20px;
+  }
+  .categories_sell,
+  .categorie_sell_card{
+    display: block;
+  }
+  .categories_sell-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .categorie_sell_card{
+    width: 100%;
+  }
+  .categorie_sell_card img{
+    width: 100%;
+  }
+}
+@media(max-width: 315px){
+  .categorie_sell_card h3{
+    font-size: 18px;
+  }
+  .categorie_sell_card{
+    height: auto;
+  }
+}
+@media(max-width: 270px){
+  .categorie_sell_card{
+    height: auto;
+  }
+}
+@media(max-width: 235px){
+  .categories_sell{
+    padding: 60px 5px;
+  }
+  .categorie_sell_card .title{
+    margin-bottom: 10px;
+  }
+  .categorie_sell_card .title button{
+    font-size: 16px;
+    width: 100%;
+    padding: 6px 0;
+  }
+  .categorie_sell_card h3{
+    font-size: 14px;
+  }
+}
+@media(max-width: 180px){
+  .categorie_sell_card{
+    padding: 10px 5px;
+  }
+  .categorie_sell_card h3{
+    font-size: 12px;
+  }
+}
